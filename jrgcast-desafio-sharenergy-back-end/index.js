@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 const PORT = process.env.PORT;
 
 app.get('/', (_req, res) => {
-  res.send(`Porta ${PORT} funfando`);
+  res.send(`Porta ${PORT} Ok!`);
 });
 
 app.get('/clients', clientController.getAllC);
