@@ -1,20 +1,23 @@
 const { MongoClient } = require('mongodb');
 require('dotenv').config();
+const clients = require('../database/dadosClientes.json');
+const companies = require('../database/dadosUsina.json');
+
+const MONGO_DB_NAME = process.env.MONGO_DB_NAME;
+const MONGO_DB_URI = process.env.MONGO_DB_URI;
 
 const OPTIONS = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 };
 
-const MONGO_DB_URL = 'mongodb://localhost:27017/StoreManager';
+const PORT = process.env.PORT;
 
-const DB_NAME = process.env.DB_NAME;
 
 const connection = async () => {
   try {
-    const conn = await MongoClient
-      .connect(MONGO_DB_URL, OPTIONS);
-    return conn.db(DB_NAME);
+    const conn = await MongoClient.connect(MONGO_DB_URI, OPTIONS);
+    return conn.db(MONGO_DB_NAME);
   } catch (err) {
     console.error(err);
     process.exit(1);
