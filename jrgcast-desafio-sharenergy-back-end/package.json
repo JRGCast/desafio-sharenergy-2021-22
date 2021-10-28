@@ -11,5 +11,8 @@
     "url": "not now"
   },
   "author": "JRGCast",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
