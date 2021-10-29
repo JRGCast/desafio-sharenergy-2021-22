@@ -1,1 +1,0 @@
-# desafio-sharenergy-back-end
