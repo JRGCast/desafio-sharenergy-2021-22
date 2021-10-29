@@ -1,6 +1,6 @@
-[submodule "jrgcast-desafio-sharenergy-front-end"]
-	path = jrgcast-desafio-sharenergy-front-end
+[submodule "desafio-sharenergy-front-end"]
+	path = desafio-sharenergy-front-end
 	url = https://github.com/JRGCast/desafio-sharenergy-front-end
-[submodule "jrgcast-desafio-sharenergy-back-end"]
-	path = jrgcast-desafio-sharenergy-back-end
+[submodule "desafio-sharenergy-back-end"]
+	path = desafio-sharenergy-back-end
 	url = https://github.com/JRGCast/desafio-sharenergy-back-end
